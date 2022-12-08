@@ -8,7 +8,13 @@
         <th>Action</th>
       </thead>
       <tbody>
-        <tr *ngFor="let product of products"></tr>
+        <tr
+          my-product
+          *ngFor="let product of products"
+          [productName]="product[0]"
+          [productCategory]="product[1]"
+          [productPrice]="product[2]"
+        ></tr>
       </tbody>
     </table>
   </div>
@@ -24,7 +30,9 @@
 
       <label>Product Price</label>
       <input type="text" id="product-price" required />
-      <button type="submit" id="add-product">Add New</button>
+      <button type="submit" id="add-product" (click)="addProduct()">
+        Add New
+      </button>
     </form>
   </div>
 </div>
