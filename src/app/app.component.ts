@@ -39,4 +39,8 @@ export class AppComponent implements OnInit {
     this.products.push([productName, productCategory, productPrice]);
     this.clearFields();
   }
+
+  deleteProduct(product) {
+    this.products = this.products.filter((p) => p != product);
+  }
 }

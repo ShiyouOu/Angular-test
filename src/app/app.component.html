@@ -12,7 +12,7 @@
           <td>{{ product[0] }}</td>
           <td>{{ product[1] }}</td>
           <td>{{ product[2] }}</td>
-          <td><button>Delete</button></td>
+          <td><button (click)="deleteProduct(product)">Delete</button></td>
         </tr>
       </tbody>
     </table>
