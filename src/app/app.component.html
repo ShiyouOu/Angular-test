@@ -7,14 +7,13 @@
         <th>Product Price</th>
         <th>Action</th>
       </thead>
-      <tbody>
-        <tr
-          my-product
-          *ngFor="let product of products"
-          [productName]="product[0]"
-          [productCategory]="product[1]"
-          [productPrice]="product[2]"
-        ></tr>
+      <tbody *ngFor="let product of products">
+        <tr>
+          <td>{{ product[0] }}</td>
+          <td>{{ product[1] }}</td>
+          <td>{{ product[2] }}</td>
+          <td><button>Delete</button></td>
+        </tr>
       </tbody>
     </table>
   </div>
