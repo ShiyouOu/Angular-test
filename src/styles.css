@@ -1,0 +1,13 @@
+/* Add application styles & imports to this file! */
+
+#product-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#product-table,
+#product-table th,
+#product-table td {
+  border: 1px solid black;
+}
